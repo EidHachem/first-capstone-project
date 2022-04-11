@@ -1,0 +1,6 @@
+@mixin display($kind, $direction, $jusCnt, $aliItms) {
+  display: $kind;
+  flex-direction: $direction;
+  justify-content: $jusCnt;
+  align-items: $aliItms;
+}

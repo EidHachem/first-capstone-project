@@ -1,12 +1,169 @@
 :root {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-img {
+:root img {
   display: block;
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1.3rem;
+  width: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  margin-left: 1rem;
+  margin-bottom: 3em;
+  margin-top: 1rem;
+}
+header .mobile-menu span {
+  height: 0.3rem;
+  width: 100%;
+  left: 0;
+  background-color: #272a31;
+  position: absolute;
+  transition: all 300ms ease;
+}
+header .mobile-menu span:first-child {
+  top: 0;
+}
+header .mobile-menu span:nth-child(2) {
+  top: 0.5rem;
+}
+header .mobile-menu span:last-child {
+  top: 1rem;
+}
+
+.user-mod-container .user-mod {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #272a31;
+  list-style: none;
+}
+.user-mod-container .user-mod img {
+  width: 1rem;
+  height: 1rem;
+}
+.user-mod-container .navbar {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  color: #272a31;
+}
+main h2 {
+  order: -1;
+  color: #ec5242;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+main h1 {
+  color: #ec5242;
+  margin-top: 0;
+  font-weight: 700;
+  font-family: "COCOGOOSE", sans-serif;
+}
+main p {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+main h3 {
+  font-family: "COCOGOOSE", sans-serif;
+  margin-bottom: 0;
+}
+main .place {
+  font-size: 1rem;
+}
+
+.program-container {
+  text-align: center;
+  background: url(../css/images/about-bootcam/background.jpg);
+  color: #fff;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.program-container div h3 {
+  margin-top: 0;
+}
+.program-container hr {
+  max-width: 2.5em;
+  border: none;
+  height: 1px;
+  background-color: #ec5242;
+}
+.program-container a {
+  display: none;
+}
+.program-container button {
+  background-color: #ec5242;
+  padding: 1em 1.5em;
+}
+
+.program article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: #272a31;
+}
+
+.program img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.program h4 {
+  color: #ec5242;
+}
+
+.instructors {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.instructors div h3 {
+  margin-bottom: 0;
+}
+.instructors div hr {
+  display: block;
+  max-width: 2em;
+  background-color: #ec5242;
+  height: 1px;
+  border: none;
+}
+.instructors img {
+  height: 10rem;
+  width: 100%;
+}
+.instructors hr {
+  display: none;
+}
+
+.instructor {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}/*# sourceMappingURL=style.css.map */
