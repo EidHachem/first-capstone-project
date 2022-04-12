@@ -1,14 +1,16 @@
-:root {
+* {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
-:root img {
+
+img {
   display: block;
   width: 100%;
 }
 
 body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
   font-family: "Lato", sans-serif;
 }
 
@@ -66,7 +68,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: start;
+  align-items: center;
   color: #272a31;
 }
 main h2 {
@@ -92,6 +94,38 @@ main h3 {
 }
 main .place {
   font-size: 1rem;
+}
+main .mini-nav {
+  display: none;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #272a31;
+  width: 90%;
+  text-align: center;
+  background-color: #d3d3d3;
+}
+.about-main h2 {
+  order: -1;
+  color: #ec5242;
+  margin-bottom: 1em;
+  font-size: 1.1rem;
+}
+.about-main h1 {
+  color: #ec5242;
+  font-weight: 700;
+  font-family: "COCOGOOSE", sans-serif;
+  font-size: 1.6rem;
+}
+.about-main :nth-child(3) {
+  background-color: #fff;
+}
+.about-main p {
+  width: 90%;
 }
 
 .program-container {
@@ -164,6 +198,100 @@ main .place {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   gap: 20px;
+}
+.instructor div hr {
+  background-color: #d3d3d3;
+  margin-left: 0;
+}
+
+aside {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+.logo-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #272a31;
+  text-align: center;
+}
+.logo-info h2 {
+  margin: 2em 2em 0.3em 2em;
+}
+.logo-info hr {
+  min-width: 2em;
+  border: none;
+  height: 1px;
+  background-color: #ec5242;
+}
+.logo-info p {
+  width: 90%;
+  margin-bottom: 2rem;
+}
+.logo-info img {
+  margin-top: 0;
+}
+
+.about-years {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+}
+.about-years .about-years-imgs {
+  width: 80%;
+  margin: 0 auto;
+}
+.about-years img {
+  margin-bottom: 1em;
+}
+
+.about-partners {
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 1em;
+  background-color: #272a31;
+}
+.about-partners h3 {
+  margin-bottom: 2em;
+}
+
+.partners-list {
+  padding: 1em;
+  flex: 0 0 calc(16.66% - 20px);
+  background-color: #272a31;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3.4em;
+}
+.partners-list img {
+  width: 3em;
+  height: 3em;
+}
+
+.about-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about-footer img {
+  width: 10em;
+  height: 10em;
+}
+.about-footer .rights p {
+  margin: 0.3em auto;
 }/*# sourceMappingURL=style.css.map */
