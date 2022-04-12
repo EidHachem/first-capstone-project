@@ -1,7 +1,7 @@
-const openMenu = document.querySelector('.mobile-menu');
+const hamburger = document.querySelector('.ham');
 
-function OpenCloseMenu() {
-  openMenu.classList.toggle('.show-menu');
+function openCloseMenu() {
+  hamburger.classList.toggle('change');
 }
 
-openMenu.addEventListener('click', OpenCloseMenu);
+hamburger.addEventListener('click', openCloseMenu);

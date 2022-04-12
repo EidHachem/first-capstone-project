@@ -14,11 +14,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.mobile-menu {
+.ham {
   display: block;
   padding: 5px;
-  margin-left: 15px;
-  margin-top: 15px;
   cursor: pointer;
 }
 
@@ -26,24 +24,26 @@ body {
 .bar2,
 .bar3 {
   display: block;
-  width: 30px;
+  width: 35px;
   height: 4px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+  margin-left: 5%;
+  margin-top: 5px;
   background-color: #272a31;
-  transition: 3s;
+  transition: 0.01s;
 }
 
-.show-menu .bar1 {
-  transform: rotate(45deg) translate(7px, 3px);
+.change .bar1 {
+  transform: rotate(45deg) translate(9px, 3px);
   background-color: #ec5242;
 }
 
-.show-menu .bar2 {
+.change .bar2 {
   opacity: 0;
 }
 
-.show-menu .bar3 {
-  transform: rotate(-45deg) translate(8px, -3px);
+.change .bar3 {
+  transform: rotate(-45deg) translate(9px, -3px);
   background-color: #ec5242;
 }
 
