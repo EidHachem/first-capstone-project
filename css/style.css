@@ -63,7 +63,7 @@ body {
   padding-right: 5%;
 }
 .user-mod-container .navbar {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -89,6 +89,9 @@ body {
 .user-mod-container .navbar .campaign {
   border: 3px solid #ec5242;
   padding: 1rem;
+}
+.user-mod-container .navbar-hide {
+  display: none;
 }
 
 main {
@@ -383,14 +386,22 @@ footer {
     align-items: center;
     list-style: none;
     margin: 0 auto;
-  }
-  .user-mod-container .navbar img {
-    width: 8rem;
-    height: 4rem;
+    background-color: #fff;
+    height: auto;
+    padding: 0.5em 0;
+    font-size: 0.8rem;
   }
   .user-mod-container .navbar li a {
     text-decoration: none;
     color: #272a31;
+  }
+  .user-mod-container .navbar :nth-child(2) a {
+    color: #ec5242;
+  }
+  .user-mod-container .navbar img {
+    display: block;
+    width: 8rem;
+    height: 4rem;
   }
   .user-mod-container .navbar :first-child {
     margin-right: 25%;

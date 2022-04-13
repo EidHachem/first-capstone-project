@@ -67,7 +67,7 @@ body {
     }
   }
   .navbar {
-    @include display(none, column, center, center);
+    @include display(flex, column, center, center);
     list-style: none;
     margin: 0 auto;
     background-color: $lightGray;
@@ -94,6 +94,10 @@ body {
       border: 3px solid $orange;
       padding: 1rem;
     }
+  }
+
+  .navbar-hide {
+    display: none;
   }
 }
 
@@ -376,13 +380,21 @@ footer {
       @include display(flex, row, space-around, center);
       list-style: none;
       margin: 0 auto;
-      img {
-        width: 8rem;
-        height: 4rem;
-      }
+      background-color: #fff;
+      height: auto;
+      padding: 0.5em 0;
+      font-size: 0.8rem;
       & li a {
         text-decoration: none;
         color: $gray;
+      }
+      & :nth-child(2) a {
+        color: $orange;
+      }
+      img {
+        display: block;
+        width: 8rem;
+        height: 4rem;
       }
       & :first-child {
         margin-right: 25%;

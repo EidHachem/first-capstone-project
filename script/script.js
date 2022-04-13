@@ -1,13 +1,14 @@
 const ham = document.querySelector('.ham');
-const navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('.navbar-hide');
+const closeMenu = document.querySelector('.change');
+
+ham.addEventListener('click', () => {
+  navbar.classList.add('navbar');
+  navbar.classList.toggle('navbar-hide');
+});
 
 function openCloseMenu() {
   ham.classList.toggle('change');
-  if ((navbar.style.display = 'none')) {
-    navbar.style.display = 'flex';
-  } else if ((navbar.style.display = 'flex')) {
-    navbar.style.display = 'none';
-  }
 }
 
 ham.addEventListener('click', openCloseMenu);
