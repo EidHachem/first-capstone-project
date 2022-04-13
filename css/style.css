@@ -64,10 +64,34 @@ body {
 }
 .user-mod-container .navbar {
   display: none;
+}
+.user-mod-container .open-navbar {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  background-color: #d3d3d3;
+  height: 100vh;
+  width: 100vw;
+}
+.user-mod-container .open-navbar img {
+  display: none;
+  width: 5em;
+  height: 5em;
+}
+.user-mod-container .open-navbar li a {
+  text-decoration: none;
   color: #272a31;
+  color: #ec5242;
+}
+.user-mod-container .open-navbar :first-child {
+  margin-right: 25%;
+}
+.user-mod-container .open-navbar .campaign {
+  border: 3px solid #ec5242;
+  padding: 1rem;
 }
 
 main {

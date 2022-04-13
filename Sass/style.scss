@@ -67,8 +67,37 @@ body {
     }
   }
   .navbar {
-    @include display(none, column, center, center);
-    color: $gray;
+    display: none;
+  }
+
+  .open-navbar {
+    @include display(flex, column, center, center);
+    list-style: none;
+    margin: 0 auto;
+    background-color: $lightGray;
+    height: 100vh;
+    width: 100vw;
+
+    img {
+      display: none;
+      width: 5em;
+      height: 5em;
+    }
+
+    & li a {
+      text-decoration: none;
+      color: $gray;
+      color: $orange;
+    }
+
+    & :first-child {
+      margin-right: 25%;
+    }
+
+    .campaign {
+      border: 3px solid $orange;
+      padding: 1rem;
+    }
   }
 }
 
