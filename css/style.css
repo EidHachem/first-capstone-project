@@ -64,9 +64,6 @@ body {
 }
 .user-mod-container .navbar {
   display: none;
-}
-.user-mod-container .open-navbar {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -76,20 +73,20 @@ body {
   height: 100vh;
   width: 100vw;
 }
-.user-mod-container .open-navbar img {
+.user-mod-container .navbar img {
   display: none;
   width: 5em;
   height: 5em;
 }
-.user-mod-container .open-navbar li a {
+.user-mod-container .navbar li a {
   text-decoration: none;
   color: #272a31;
   color: #ec5242;
 }
-.user-mod-container .open-navbar :first-child {
+.user-mod-container .navbar :first-child {
   margin-right: 25%;
 }
-.user-mod-container .open-navbar .campaign {
+.user-mod-container .navbar .campaign {
   border: 3px solid #ec5242;
   padding: 1rem;
 }
@@ -442,6 +439,11 @@ footer {
   }
   main .about-email {
     color: #272a31;
+  }
+
+  .about-main-container {
+    margin: 0 auto;
+    padding: 0;
   }
 
   .about-main {

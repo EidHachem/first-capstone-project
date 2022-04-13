@@ -1,12 +1,16 @@
-const hamburger = document.querySelector('.ham');
+const ham = document.querySelector('.ham');
 const navbar = document.querySelector('.navbar');
 
 function openCloseMenu() {
-  hamburger.classList.toggle('change');
-  navbar.classList.toggle('.open-navbar');
+  ham.classList.toggle('change');
+  if ((navbar.style.display = 'none')) {
+    navbar.style.display = 'flex';
+  } else if ((navbar.style.display = 'flex')) {
+    navbar.style.display = 'none';
+  }
 }
 
-hamburger.addEventListener('click', openCloseMenu);
+ham.addEventListener('click', openCloseMenu);
 
 const speakers = [
   {

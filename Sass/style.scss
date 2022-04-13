@@ -67,11 +67,7 @@ body {
     }
   }
   .navbar {
-    display: none;
-  }
-
-  .open-navbar {
-    @include display(flex, column, center, center);
+    @include display(none, column, center, center);
     list-style: none;
     margin: 0 auto;
     background-color: $lightGray;
@@ -436,6 +432,11 @@ footer {
     .about-email {
       color: $gray;
     }
+  }
+
+  .about-main-container {
+    margin: 0 auto;
+    padding: 0;
   }
 
   .about-main {
