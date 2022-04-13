@@ -365,6 +365,61 @@ footer {
       font-size: 0.9rem;
       border: none;
     }
+
+    .main-h2 {
+      display: none;
+    }
+
+    .main-first-p {
+      max-width: 600px;
+      margin-bottom: 5em;
+      margin-top: 4em;
+    }
+
+    .about-email {
+      color: $gray;
+    }
+  }
+
+  .about-main {
+    margin-top: 5em;
+  }
+
+  .logo-info {
+    margin-top: 5em;
+
+    & p {
+      max-width: 35em;
+    }
+
+    & img {
+      width: 20em;
+      margin-bottom: 5em;
+    }
+  }
+
+  .about-years-imgs {
+    @include display(flex, row, center, center);
+    gap: 2em;
+
+    & img {
+      max-width: 20em;
+      max-height: 10em;
+    }
+  }
+
+  .about-footer {
+    @include display(flex, row, center, center);
+    background-color: $gray;
+    color: #fff;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    & img {
+      background-color: #fff;
+      padding: 0;
+      max-height: 5em;
+    }
   }
 
   .program-container button {
