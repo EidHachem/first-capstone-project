@@ -34,7 +34,7 @@ body {
   margin-left: 5%;
   margin-top: 5px;
   background-color: $gray;
-  transition: 0.01s;
+  transition: 0.001s;
 }
 
 .change .bar1 {
@@ -102,8 +102,9 @@ body {
 }
 
 main {
-  @include display(flex, column, start, center);
+  @include display(flex, column, start, start);
   color: $gray;
+  padding: 1em 1em;
   h2 {
     order: -1;
     color: $orange;
@@ -182,6 +183,8 @@ main {
   & button {
     background-color: $orange;
     padding: 1em 1.5em;
+    border: none;
+    color: #fff;
   }
 }
 
@@ -198,6 +201,17 @@ main {
 
 .program h4 {
   color: $orange;
+}
+
+.intructors-title {
+  text-align: center;
+  & hr {
+    max-width: 2em;
+    height: 1px;
+    background-color: $orange;
+    border: none;
+    margin-bottom: 3em;
+  }
 }
 
 .instructors {
@@ -324,6 +338,20 @@ footer {
   & .rights {
     p {
       margin: 0.3em auto;
+    }
+  }
+}
+
+.show-more {
+  text-align: center;
+  padding: 1em;
+  margin: 0 1em 2em;
+  border: 1px solid $lightGray;
+  & a {
+    text-decoration: none;
+    color: $gray;
+    & span {
+      color: $orange;
     }
   }
 }

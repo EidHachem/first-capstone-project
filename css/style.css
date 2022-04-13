@@ -30,7 +30,7 @@ body {
   margin-left: 5%;
   margin-top: 5px;
   background-color: #272a31;
-  transition: 0.01s;
+  transition: 0.001s;
 }
 
 .change .bar1 {
@@ -98,8 +98,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   color: #272a31;
+  padding: 1em 1em;
 }
 main h2 {
   order: -1;
@@ -180,6 +181,8 @@ main .mini-nav {
 .program-container button {
   background-color: #ec5242;
   padding: 1em 1.5em;
+  border: none;
+  color: #fff;
 }
 
 .program article {
@@ -198,6 +201,17 @@ main .mini-nav {
 
 .program h4 {
   color: #ec5242;
+}
+
+.intructors-title {
+  text-align: center;
+}
+.intructors-title hr {
+  max-width: 2em;
+  height: 1px;
+  background-color: #ec5242;
+  border: none;
+  margin-bottom: 3em;
 }
 
 .instructors {
@@ -327,6 +341,20 @@ footer {
 }
 .about-footer .rights p {
   margin: 0.3em auto;
+}
+
+.show-more {
+  text-align: center;
+  padding: 1em;
+  margin: 0 1em 2em;
+  border: 1px solid #d3d3d3;
+}
+.show-more a {
+  text-decoration: none;
+  color: #272a31;
+}
+.show-more a span {
+  color: #ec5242;
 }
 
 @media (min-width: 768px) {
