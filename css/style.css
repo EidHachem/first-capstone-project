@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
 * {
   box-sizing: border-box;
 }
@@ -694,7 +696,7 @@ footer {
     top: -50px;
     right: 0;
     bottom: 0;
-    left: 375px;
+    left: 425px;
     z-index: -1;
     filter: saturate(20%);
   }
@@ -708,7 +710,7 @@ footer {
     background-size: cover;
     position: absolute;
     top: -50px;
-    left: 800px;
+    left: 900px;
     z-index: -1;
     filter: saturate(20%);
   }
