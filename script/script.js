@@ -20,7 +20,7 @@ const speakers = [
     name: 'Ben Parker',
     position: 'Design Director at University of London',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque labore ex ad impedit, mollitia rerum et non',
+      'Started in this field 10 years a good, wrote a book about website design patterns',
   },
   {
     image: '../css/images/instructors/g1.jpg',
@@ -28,7 +28,7 @@ const speakers = [
     name: 'Zoe Fernandez',
     position: 'Web Application Developer at Facebook',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque labore ex ad impedit, mollitia rerum et non',
+      'Full stack web developer since 2001, computer science instructor at university of London',
   },
   {
     image: '../css/images/instructors/g2.jpg',
@@ -36,15 +36,16 @@ const speakers = [
     name: 'Edward Cisneros',
     position: 'SEO Specialist at Google',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque labore ex ad impedit, mollitia rerum et non',
+      'Over 25 years of experience  in dealing with big industry companies, speacialist in advertising',
+    show: 'no',
   },
   {
     image: '../css/images/instructors/b2.jpg',
     imageAlt: 'Picture of May Gauthier',
     name: 'May Gauthier',
     position: 'Interaction Designer at Lenovo',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque labore ex ad impedit, mollitia rerum et non',
+    description: 'A super talanted desinger with huge experience in web design',
+    show: 'no',
   },
   {
     image: '../css/images/instructors/b3.jpg',
@@ -52,7 +53,8 @@ const speakers = [
     name: 'Vince Veras',
     position: 'Visual Designer at Microverse',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque labore ex ad impedit, mollitia rerum et non',
+      'Best design winner of Paris university for 5 years, specialist in web design',
+    show: 'no',
   },
   {
     image: '../css/images/instructors/g3.jpg',
@@ -60,7 +62,8 @@ const speakers = [
     name: 'Chris Powel',
     position: 'JavaScript Engineer at Apple',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque labore ex ad impedit, mollitia rerum et non',
+      'A pro developer for more than 20 years, Chris has great expirience in delivering new info to beginners',
+    show: 'no',
   },
 ];
 
@@ -69,7 +72,7 @@ if (speakerSection) {
   speakerSection.innerHTML = speakers
     .map(
       (speaker) => `
-      <article class="instructor">
+      <article class="instructor ${speaker.show}">
       <img src="${speaker.image}" alt="${speaker.imageAlt}" />
       <div>
         <h5>${speaker.name}</h5>

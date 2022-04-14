@@ -67,7 +67,7 @@ body {
     }
   }
   .navbar {
-    @include display(flex, column, center, center);
+    @include display(flex, column, start, start);
     list-style: none;
     margin: 0 auto;
     background-color: $lightGray;
@@ -78,6 +78,10 @@ body {
       display: none;
       width: 5em;
       height: 5em;
+    }
+
+    & li {
+      margin-top: 20px;
     }
 
     & li a {
@@ -105,6 +109,9 @@ main {
   @include display(flex, column, start, start);
   color: $gray;
   padding: 1em 1em;
+  background: url(../css/images/mobilebg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   h2 {
     order: -1;
     color: $orange;
@@ -119,15 +126,21 @@ main {
   }
   p {
     font-size: 0.8rem;
+    font-weight: 700;
     line-height: 1.5rem;
     margin-top: 0;
+    opacity: 90%;
+    border: 1px solid $lightGray;
+    background-color: #fff;
   }
   h3 {
     font-family: $subFont;
     margin-bottom: 0;
   }
+
   .place {
     font-size: 1rem;
+    background: none;
   }
   .mini-nav {
     display: none;
@@ -137,9 +150,8 @@ main {
 .about-main {
   @include display(flex, column, center, center);
   color: $gray;
-  width: 90%;
+  width: 100%;
   text-align: center;
-  background-color: $lightGray;
   h2 {
     order: -1;
     color: $orange;
@@ -153,12 +165,28 @@ main {
     font-size: 1.6rem;
   }
 
+  .place {
+    font-size: 0.8rem;
+    border: none;
+  }
+
   & :nth-child(3) {
     background-color: #fff;
   }
 
   p {
     width: 90%;
+    border: 1px solid $lightGray;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+
+    & span {
+      display: none;
+    }
   }
 }
 
@@ -197,10 +225,15 @@ main {
 .program img {
   width: 3rem;
   height: 3rem;
+  padding: 0.2em 0.4em;
 }
 
 .program h4 {
   color: $orange;
+}
+
+.program p {
+  padding: 0 0.3em;
 }
 
 .intructors-title {
@@ -216,6 +249,7 @@ main {
 
 .instructors {
   @include display(flex, column, start, center);
+  padding: 0 0.3em;
   & div h3 {
     margin-bottom: 0;
   }
@@ -227,8 +261,12 @@ main {
     border: none;
   }
   img {
-    height: 10rem;
-    width: 100%;
+    height: 8rem;
+    width: 8rem;
+    padding: 1rem;
+    background-image: url(../css/images/instructors/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 3em 3em;
   }
   hr {
     display: none;
@@ -239,6 +277,17 @@ main {
   @include display(flex, row, start, start);
   gap: 20px;
 
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+
   & div hr {
     background-color: $lightGray;
     margin-left: 0;
@@ -246,7 +295,13 @@ main {
 
   & div .position {
     color: $orange;
+    font-size: 0.7rem;
+    margin-top: 0;
   }
+}
+
+.no {
+  display: none;
 }
 
 aside {
@@ -276,26 +331,95 @@ footer {
   p {
     width: 90%;
     margin-bottom: 2rem;
+    font-size: 0.7rem;
   }
 
   img {
+    width: 90%;
     margin-top: 0;
+    border: 1px solid $lightGray;
+  }
+
+  .finale-hr-logo {
+    width: 100%;
+    background-color: $lightGray;
+    margin-top: 4em;
   }
 }
 
 .about-years {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin: 0 auto;
   width: 90%;
 
-  & .about-years-imgs {
-    width: 80%;
-    margin: 0 auto;
+  .black-p {
+    color: $gray;
+    font-size: 0.8rem;
+    margin-bottom: 2em;
   }
 
-  & img {
-    margin-bottom: 1em;
+  hr {
+    max-width: 1.5em;
+    background-color: $orange;
+    height: 1px;
+    border: none;
+  }
+
+  position: relative;
+
+  span {
+    font-size: 5rem;
+    color: #fff;
+    align-self: center;
+  }
+
+  p {
+    color: #fff;
+    align-self: center;
+  }
+
+  .first-one {
+    text-align: center;
+
+    & p {
+      margin-bottom: 10em;
+    }
+  }
+
+  .second-one {
+    text-align: center;
+  }
+
+  & .first-one::before {
+    content: '';
+    width: 20em;
+    height: 15em;
+    background-image: url(../css/images/about-bootcam/mars-kwzWjTnDPLk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 125px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    filter: saturate(20%);
+  }
+
+  & .seconed-one::before {
+    content: '';
+    width: 20em;
+    height: 15em;
+    background-image: url(../css/images/about-bootcam/mars-YgOCJz9uGMk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    z-index: -1;
+    filter: saturate(20%);
   }
 }
 
@@ -305,9 +429,17 @@ footer {
   text-align: center;
   padding: 1em;
   background-color: $gray;
+  margin-top: 8em;
 
   & h3 {
     margin-bottom: 2em;
+  }
+
+  hr {
+    max-width: 2em;
+    background-color: $orange;
+    border: none;
+    height: 1px;
   }
 }
 
@@ -331,13 +463,14 @@ footer {
   @include display(flex, row, center, center);
 
   & img {
-    width: 10em;
-    height: 10em;
+    width: 7em;
+    height: 7em;
   }
 
   & .rights {
     p {
       margin: 0.3em auto;
+      font-size: 0.7rem;
     }
   }
 }
@@ -367,6 +500,7 @@ footer {
       color: #fff;
       list-style: none;
       margin: 0 auto;
+      padding: 0.2em 0;
       li {
         margin: 0 10px;
       }
@@ -376,7 +510,7 @@ footer {
         height: 1rem;
       }
     }
-    .navbar {
+    .navbar-hide {
       @include display(flex, row, space-around, center);
       list-style: none;
       margin: 0 auto;
@@ -384,9 +518,15 @@ footer {
       height: auto;
       padding: 0.5em 0;
       font-size: 0.8rem;
+      text-align: center;
+
+      & li {
+        margin-top: 0;
+      }
       & li a {
         text-decoration: none;
         color: $gray;
+        font-size: 1rem;
       }
       & :nth-child(2) a {
         color: $orange;
@@ -409,7 +549,9 @@ footer {
     @include display(flex, column, start, start);
     color: $gray;
     margin: 0 auto;
-    background-color: $lightGray;
+    background: url(../css/images/mainbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     h2 {
       margin-left: 6%;
     }
@@ -418,7 +560,7 @@ footer {
       max-width: 15em;
     }
     p {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       max-width: 30em;
       margin-left: 7%;
       border: 2px solid #fff;
@@ -453,6 +595,19 @@ footer {
 
   .about-main {
     margin-top: 5em;
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    a {
+      text-decoration: underline;
+
+      & span {
+        display: inline-block;
+        margin-left: 0.2em;
+      }
+    }
   }
 
   .logo-info {
@@ -464,17 +619,61 @@ footer {
 
     & img {
       width: 20em;
-      margin-bottom: 5em;
     }
   }
 
   .about-years-imgs {
-    @include display(flex, row, center, center);
-    gap: 2em;
+    @include display(flex, row, center, space-between);
+    gap: 15em;
+    position: relative;
 
-    & img {
-      max-width: 20em;
-      max-height: 10em;
+    span {
+      font-size: 5rem;
+      color: #fff;
+      align-self: center;
+    }
+
+    p {
+      color: #fff;
+      align-self: center;
+    }
+
+    .first-one {
+      text-align: center;
+    }
+
+    .second-one {
+      text-align: center;
+    }
+
+    .first-one::before {
+      content: '';
+      width: 25em;
+      height: 15em;
+      background-image: url(../css/images/about-bootcam/mars-kwzWjTnDPLk-unsplash.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 100px;
+      z-index: -1;
+      filter: saturate(20%);
+    }
+
+    .seconed-one::before {
+      content: '';
+      width: 25em;
+      height: 15em;
+      background-image: url(../css/images/about-bootcam/mars-YgOCJz9uGMk-unsplash.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 550px;
+      z-index: -1;
+      filter: saturate(20%);
     }
   }
 
@@ -545,8 +744,12 @@ footer {
       border: none;
     }
     img {
-      height: 9rem;
-      width: 100%;
+      height: 13rem;
+      width: 15rem;
+      padding: 1em;
+      background-image: url(../css/images/instructors/background.jpg);
+      background-repeat: no-repeat;
+      background-size: 5em 5em;
     }
     hr {
       display: none;
@@ -554,12 +757,34 @@ footer {
 
     h5 {
       font-size: 1rem;
-      margin-bottom: 5px;
+      margin-bottom: 3em;
       margin-top: 0;
     }
-    .position {
-      font-size: 0.7rem;
+
+    p {
+      font-size: 0.9rem;
       margin-top: 0;
+    }
+  }
+
+  .no {
+    display: flex;
+  }
+
+  .show-more {
+    display: none;
+  }
+
+  .partners {
+    color: #fff;
+    background-color: $gray;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    hr {
+      max-width: 2rem;
+      color: $orange;
     }
   }
 
@@ -578,5 +803,8 @@ footer {
     & img {
       width: 200px;
     }
+  }
+  .about-partners {
+    display: none;
   }
 }

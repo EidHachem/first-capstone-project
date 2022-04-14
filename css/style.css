@@ -65,8 +65,8 @@ body {
 .user-mod-container .navbar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   list-style: none;
   margin: 0 auto;
   background-color: #d3d3d3;
@@ -77,6 +77,9 @@ body {
   display: none;
   width: 5em;
   height: 5em;
+}
+.user-mod-container .navbar li {
+  margin-top: 20px;
 }
 .user-mod-container .navbar li a {
   text-decoration: none;
@@ -101,6 +104,9 @@ main {
   align-items: start;
   color: #272a31;
   padding: 1em 1em;
+  background: url(../css/images/mobilebg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main h2 {
   order: -1;
@@ -116,8 +122,12 @@ main h1 {
 }
 main p {
   font-size: 0.8rem;
+  font-weight: 700;
   line-height: 1.5rem;
   margin-top: 0;
+  opacity: 90%;
+  border: 1px solid #d3d3d3;
+  background-color: #fff;
 }
 main h3 {
   font-family: "COCOGOOSE", sans-serif;
@@ -125,6 +135,7 @@ main h3 {
 }
 main .place {
   font-size: 1rem;
+  background: none;
 }
 main .mini-nav {
   display: none;
@@ -136,9 +147,8 @@ main .mini-nav {
   justify-content: center;
   align-items: center;
   color: #272a31;
-  width: 90%;
+  width: 100%;
   text-align: center;
-  background-color: #d3d3d3;
 }
 .about-main h2 {
   order: -1;
@@ -152,11 +162,24 @@ main .mini-nav {
   font-family: "COCOGOOSE", sans-serif;
   font-size: 1.6rem;
 }
+.about-main .place {
+  font-size: 0.8rem;
+  border: none;
+}
 .about-main :nth-child(3) {
   background-color: #fff;
 }
 .about-main p {
   width: 90%;
+  border: 1px solid #d3d3d3;
+}
+.about-main a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+.about-main a span {
+  display: none;
 }
 
 .program-container {
@@ -197,10 +220,15 @@ main .mini-nav {
 .program img {
   width: 3rem;
   height: 3rem;
+  padding: 0.2em 0.4em;
 }
 
 .program h4 {
   color: #ec5242;
+}
+
+.program p {
+  padding: 0 0.3em;
 }
 
 .intructors-title {
@@ -219,6 +247,7 @@ main .mini-nav {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  padding: 0 0.3em;
 }
 .instructors div h3 {
   margin-bottom: 0;
@@ -231,8 +260,12 @@ main .mini-nav {
   border: none;
 }
 .instructors img {
-  height: 10rem;
-  width: 100%;
+  height: 8rem;
+  width: 8rem;
+  padding: 1rem;
+  background-image: url(../css/images/instructors/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 3em 3em;
 }
 .instructors hr {
   display: none;
@@ -245,12 +278,27 @@ main .mini-nav {
   align-items: start;
   gap: 20px;
 }
+.instructor h5 {
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+.instructor p {
+  font-size: 0.8rem;
+  margin-top: 0;
+}
 .instructor div hr {
   background-color: #d3d3d3;
   margin-left: 0;
 }
 .instructor div .position {
   color: #ec5242;
+  font-size: 0.7rem;
+  margin-top: 0;
+}
+
+.no {
+  display: none;
 }
 
 aside {
@@ -281,23 +329,83 @@ footer {
 .logo-info p {
   width: 90%;
   margin-bottom: 2rem;
+  font-size: 0.7rem;
 }
 .logo-info img {
+  width: 90%;
   margin-top: 0;
+  border: 1px solid #d3d3d3;
+}
+.logo-info .finale-hr-logo {
+  width: 100%;
+  background-color: #d3d3d3;
+  margin-top: 4em;
 }
 
 .about-years {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin: 0 auto;
   width: 90%;
+  position: relative;
 }
-.about-years .about-years-imgs {
-  width: 80%;
-  margin: 0 auto;
+.about-years .black-p {
+  color: #272a31;
+  font-size: 0.8rem;
+  margin-bottom: 2em;
 }
-.about-years img {
-  margin-bottom: 1em;
+.about-years hr {
+  max-width: 1.5em;
+  background-color: #ec5242;
+  height: 1px;
+  border: none;
+}
+.about-years span {
+  font-size: 5rem;
+  color: #fff;
+  align-self: center;
+}
+.about-years p {
+  color: #fff;
+  align-self: center;
+}
+.about-years .first-one {
+  text-align: center;
+}
+.about-years .first-one p {
+  margin-bottom: 10em;
+}
+.about-years .second-one {
+  text-align: center;
+}
+.about-years .first-one::before {
+  content: "";
+  width: 20em;
+  height: 15em;
+  background-image: url(../css/images/about-bootcam/mars-kwzWjTnDPLk-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 125px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+  filter: saturate(20%);
+}
+.about-years .seconed-one::before {
+  content: "";
+  width: 20em;
+  height: 15em;
+  background-image: url(../css/images/about-bootcam/mars-YgOCJz9uGMk-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 400px;
+  left: 0;
+  z-index: -1;
+  filter: saturate(20%);
 }
 
 .about-partners {
@@ -306,9 +414,16 @@ footer {
   text-align: center;
   padding: 1em;
   background-color: #272a31;
+  margin-top: 8em;
 }
 .about-partners h3 {
   margin-bottom: 2em;
+}
+.about-partners hr {
+  max-width: 2em;
+  background-color: #ec5242;
+  border: none;
+  height: 1px;
 }
 
 .partners-list {
@@ -336,11 +451,12 @@ footer {
   align-items: center;
 }
 .about-footer img {
-  width: 10em;
-  height: 10em;
+  width: 7em;
+  height: 7em;
 }
 .about-footer .rights p {
   margin: 0.3em auto;
+  font-size: 0.7rem;
 }
 
 .show-more {
@@ -371,6 +487,7 @@ footer {
     color: #fff;
     list-style: none;
     margin: 0 auto;
+    padding: 0.2em 0;
   }
   .user-mod-container .user-mod li {
     margin: 0 10px;
@@ -379,7 +496,7 @@ footer {
     width: 1rem;
     height: 1rem;
   }
-  .user-mod-container .navbar {
+  .user-mod-container .navbar-hide {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -390,23 +507,28 @@ footer {
     height: auto;
     padding: 0.5em 0;
     font-size: 0.8rem;
+    text-align: center;
   }
-  .user-mod-container .navbar li a {
+  .user-mod-container .navbar-hide li {
+    margin-top: 0;
+  }
+  .user-mod-container .navbar-hide li a {
     text-decoration: none;
     color: #272a31;
+    font-size: 1rem;
   }
-  .user-mod-container .navbar :nth-child(2) a {
+  .user-mod-container .navbar-hide :nth-child(2) a {
     color: #ec5242;
   }
-  .user-mod-container .navbar img {
+  .user-mod-container .navbar-hide img {
     display: block;
     width: 8rem;
     height: 4rem;
   }
-  .user-mod-container .navbar :first-child {
+  .user-mod-container .navbar-hide :first-child {
     margin-right: 25%;
   }
-  .user-mod-container .navbar .campaign {
+  .user-mod-container .navbar-hide .campaign {
     border: 3px solid #ec5242;
     padding: 1rem;
   }
@@ -418,7 +540,9 @@ footer {
     align-items: start;
     color: #272a31;
     margin: 0 auto;
-    background-color: #d3d3d3;
+    background: url(../css/images/mainbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   main h2 {
     margin-left: 6%;
@@ -428,7 +552,7 @@ footer {
     max-width: 15em;
   }
   main p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     max-width: 30em;
     margin-left: 7%;
     border: 2px solid #fff;
@@ -460,6 +584,16 @@ footer {
   .about-main {
     margin-top: 5em;
   }
+  .about-main p {
+    font-size: 0.8rem;
+  }
+  .about-main a {
+    text-decoration: underline;
+  }
+  .about-main a span {
+    display: inline-block;
+    margin-left: 0.2em;
+  }
 
   .logo-info {
     margin-top: 5em;
@@ -469,19 +603,58 @@ footer {
   }
   .logo-info img {
     width: 20em;
-    margin-bottom: 5em;
   }
 
   .about-years-imgs {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 2em;
+    align-items: space-between;
+    gap: 15em;
+    position: relative;
   }
-  .about-years-imgs img {
-    max-width: 20em;
-    max-height: 10em;
+  .about-years-imgs span {
+    font-size: 5rem;
+    color: #fff;
+    align-self: center;
+  }
+  .about-years-imgs p {
+    color: #fff;
+    align-self: center;
+  }
+  .about-years-imgs .first-one {
+    text-align: center;
+  }
+  .about-years-imgs .second-one {
+    text-align: center;
+  }
+  .about-years-imgs .first-one::before {
+    content: "";
+    width: 25em;
+    height: 15em;
+    background-image: url(../css/images/about-bootcam/mars-kwzWjTnDPLk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 100px;
+    z-index: -1;
+    filter: saturate(20%);
+  }
+  .about-years-imgs .seconed-one::before {
+    content: "";
+    width: 25em;
+    height: 15em;
+    background-image: url(../css/images/about-bootcam/mars-YgOCJz9uGMk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 550px;
+    z-index: -1;
+    filter: saturate(20%);
   }
 
   .about-footer {
@@ -558,20 +731,44 @@ footer {
     border: none;
   }
   .instructors img {
-    height: 9rem;
-    width: 100%;
+    height: 13rem;
+    width: 15rem;
+    padding: 1em;
+    background-image: url(../css/images/instructors/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 5em 5em;
   }
   .instructors hr {
     display: none;
   }
   .instructors h5 {
     font-size: 1rem;
-    margin-bottom: 5px;
+    margin-bottom: 3em;
     margin-top: 0;
   }
-  .instructors .position {
-    font-size: 0.7rem;
+  .instructors p {
+    font-size: 0.9rem;
     margin-top: 0;
+  }
+
+  .no {
+    display: flex;
+  }
+
+  .show-more {
+    display: none;
+  }
+
+  .partners {
+    color: #fff;
+    background-color: #272a31;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .partners hr {
+    max-width: 2rem;
+    color: #ec5242;
   }
 
   aside {
@@ -590,5 +787,9 @@ footer {
   }
   footer img {
     width: 200px;
+  }
+
+  .about-partners {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
