@@ -56,11 +56,6 @@ body {
   list-style: none;
 }
 
-.user-mod-container .user-mod img {
-  width: 1rem;
-  height: 1rem;
-}
-
 .user-mod-container .user-mod .logout {
   padding-right: 5%;
 }
@@ -77,24 +72,8 @@ body {
   width: 100vw;
 }
 
-.user-mod-container .navbar img {
-  display: none;
-  width: 5em;
-  height: 5em;
-}
-
 .user-mod-container .navbar li {
   margin-top: 20px;
-}
-
-.user-mod-container .navbar li a {
-  text-decoration: none;
-  color: #272a31;
-  color: #ec5242;
-}
-
-.user-mod-container .navbar :first-child {
-  margin-right: 25%;
 }
 
 .user-mod-container .navbar .campaign {
@@ -189,6 +168,10 @@ main .mini-nav {
   background-color: #fff;
 }
 
+.user-mod-container .navbar :first-child {
+  margin-right: 25%;
+}
+
 .about-main p {
   width: 90%;
   border: 1px solid #d3d3d3;
@@ -200,20 +183,12 @@ main .mini-nav {
   font-size: 1rem;
 }
 
-.about-main a span {
-  display: none;
-}
-
 .program-container {
   text-align: center;
   background: url(../css/images/about-bootcam/background.jpg);
   color: #fff;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-}
-
-.program-container div h3 {
-  margin-top: 0;
 }
 
 .program-container hr {
@@ -277,18 +252,6 @@ main .mini-nav {
   padding: 0 0.3em;
 }
 
-.instructors div h3 {
-  margin-bottom: 0;
-}
-
-.instructors div hr {
-  display: block;
-  max-width: 2em;
-  background-color: #ec5242;
-  height: 1px;
-  border: none;
-}
-
 .instructors img {
   height: 8rem;
   width: 8rem;
@@ -319,11 +282,6 @@ main .mini-nav {
 .instructor p {
   font-size: 0.8rem;
   margin-top: 0;
-}
-
-.instructor div hr {
-  background-color: #d3d3d3;
-  margin-left: 0;
 }
 
 .instructor div .position {
@@ -410,6 +368,10 @@ footer {
   align-self: center;
 }
 
+.about-main a span {
+  display: none;
+}
+
 .about-years p {
   color: #fff;
   align-self: center;
@@ -436,9 +398,9 @@ footer {
   background-size: cover;
   position: absolute;
   top: 125px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: -1;
   filter: saturate(20%);
 }
@@ -470,11 +432,32 @@ footer {
   margin-bottom: 2em;
 }
 
+.program-container div h3 {
+  margin-top: 0;
+}
+
+.instructors div h3 {
+  margin-bottom: 0;
+}
+
 .about-partners hr {
   max-width: 2em;
   background-color: #ec5242;
   border: none;
   height: 1px;
+}
+
+.instructors div hr {
+  display: block;
+  max-width: 2em;
+  background-color: #ec5242;
+  height: 1px;
+  border: none;
+}
+
+.instructor div hr {
+  background-color: #d3d3d3;
+  margin-left: 0;
 }
 
 .partners-list {
@@ -508,6 +491,17 @@ footer {
   height: 7em;
 }
 
+.user-mod-container .navbar img {
+  display: none;
+  width: 5em;
+  height: 5em;
+}
+
+.user-mod-container .user-mod img {
+  width: 1rem;
+  height: 1rem;
+}
+
 .about-footer .rights p {
   margin: 0.3em auto;
   font-size: 0.7rem;
@@ -523,6 +517,12 @@ footer {
 .show-more a {
   text-decoration: none;
   color: #272a31;
+}
+
+.user-mod-container .navbar li a {
+  text-decoration: none;
+  color: #272a31;
+  color: #ec5242;
 }
 
 .show-more a span {
@@ -550,11 +550,6 @@ footer {
     margin: 0 10px;
   }
 
-  .user-mod-container .user-mod img {
-    width: 1rem;
-    height: 1rem;
-  }
-
   .user-mod-container .navbar-hide {
     display: flex;
     flex-direction: row;
@@ -573,22 +568,6 @@ footer {
     margin-top: 0;
   }
 
-  .user-mod-container .navbar-hide li a {
-    text-decoration: none;
-    color: #272a31;
-    font-size: 1rem;
-  }
-
-  .user-mod-container .navbar-hide :nth-child(2) a {
-    color: #ec5242;
-  }
-
-  .user-mod-container .navbar-hide img {
-    display: block;
-    width: 8rem;
-    height: 4rem;
-  }
-
   .user-mod-container .navbar-hide :first-child {
     margin-right: 25%;
   }
@@ -602,16 +581,17 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: start;
+    align-items: center;
     color: #272a31;
     margin: 0 auto;
     background: url(../css/images/mainbg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: -20%;
   }
 
   main h2 {
-    margin-left: 0;
+    margin-left: -15%;
   }
 
   main h1 {
@@ -666,11 +646,6 @@ footer {
     text-decoration: underline;
   }
 
-  .about-main a span {
-    display: inline-block;
-    margin-left: 0.2em;
-  }
-
   .logo-info {
     margin-top: 5em;
   }
@@ -679,15 +654,11 @@ footer {
     max-width: 35em;
   }
 
-  .logo-info img {
-    width: 20em;
-  }
-
   .about-years-imgs {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: space-between;
+    align-content: space-between;
     gap: 15em;
     position: relative;
   }
@@ -696,6 +667,11 @@ footer {
     font-size: 5rem;
     color: #fff;
     align-self: center;
+  }
+
+  .about-main a span {
+    display: inline-block;
+    margin-left: 0.2em;
   }
 
   .about-years-imgs p {
@@ -719,9 +695,9 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
     left: 375px;
     z-index: -1;
     filter: saturate(20%);
@@ -752,12 +728,6 @@ footer {
     padding-bottom: 2em;
   }
 
-  .about-footer img {
-    background-color: #fff;
-    padding: 0;
-    max-height: 5em;
-  }
-
   .program-container button {
     display: none;
   }
@@ -766,6 +736,16 @@ footer {
     display: block;
     color: #fff;
     margin-top: 2em;
+  }
+
+  .user-mod-container .navbar-hide li a {
+    text-decoration: none;
+    color: #272a31;
+    font-size: 1rem;
+  }
+
+  .user-mod-container .navbar-hide :nth-child(2) a {
+    color: #ec5242;
   }
 
   .program {
@@ -785,10 +765,6 @@ footer {
     margin: 0;
     margin-right: 5px;
     padding: 0;
-  }
-
-  .program article p {
-    margin: 0;
   }
 
   .program article h4 {
@@ -811,27 +787,6 @@ footer {
     padding: 2em 0;
   }
 
-  .instructors div h3 {
-    margin-bottom: 0;
-  }
-
-  .instructors div hr {
-    display: block;
-    max-width: 2em;
-    background-color: #d3d3d3;
-    height: 1px;
-    border: none;
-  }
-
-  .instructors img {
-    height: 13rem;
-    width: 15rem;
-    padding: 1em;
-    background-image: url(../css/images/instructors/background.jpg);
-    background-repeat: no-repeat;
-    background-size: 5em 5em;
-  }
-
   .instructors hr {
     display: none;
   }
@@ -845,6 +800,10 @@ footer {
   .instructors p {
     font-size: 0.9rem;
     margin-top: 0;
+  }
+
+  .program article p {
+    margin: 0;
   }
 
   .no {
@@ -868,6 +827,14 @@ footer {
     color: #ec5242;
   }
 
+  .instructors div hr {
+    display: block;
+    max-width: 2em;
+    background-color: #d3d3d3;
+    height: 1px;
+    border: none;
+  }
+
   aside {
     display: block;
   }
@@ -875,6 +842,10 @@ footer {
   aside img,
   aside h3 {
     opacity: 50%;
+  }
+
+  .instructors div h3 {
+    margin-bottom: 0;
   }
 
   footer {
@@ -887,6 +858,36 @@ footer {
 
   footer img {
     width: 200px;
+  }
+
+  .logo-info img {
+    width: 20em;
+  }
+
+  .about-footer img {
+    background-color: #fff;
+    padding: 0;
+    max-height: 5em;
+  }
+
+  .instructors img {
+    height: 13rem;
+    width: 15rem;
+    padding: 1em;
+    background-image: url(../css/images/instructors/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 5em 5em;
+  }
+
+  .user-mod-container .user-mod img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .user-mod-container .navbar-hide img {
+    display: block;
+    width: 8rem;
+    height: 4rem;
   }
 
   .about-partners {
