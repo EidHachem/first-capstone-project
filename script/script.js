@@ -1,6 +1,5 @@
 const ham = document.querySelector('.ham');
 const navbar = document.querySelector('.navbar-hide');
-const closeMenu = document.querySelector('.change');
 
 ham.addEventListener('click', () => {
   navbar.classList.add('navbar');
@@ -80,7 +79,7 @@ if (speakerSection) {
         <hr />
         <p>${speaker.description}</p>
       </div>
-    </article>`
+    </article>`,
     )
     .join('');
 }
