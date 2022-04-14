@@ -66,6 +66,7 @@ body {
       padding-right: 5%;
     }
   }
+
   .navbar {
     @include display(flex, column, start, start);
     list-style: none;
@@ -112,18 +113,21 @@ main {
   background: url(../css/images/mobilebg.png);
   background-repeat: no-repeat;
   background-size: cover;
+
   h2 {
     order: -1;
     color: $orange;
     margin-bottom: 0;
     font-size: 1.1rem;
   }
+
   h1 {
     color: $orange;
     margin-top: 0;
     font-weight: 700;
     font-family: $subFont;
   }
+
   p {
     font-size: 0.8rem;
     font-weight: 700;
@@ -133,6 +137,7 @@ main {
     border: 1px solid $lightGray;
     background-color: #fff;
   }
+
   h3 {
     font-family: $subFont;
     margin-bottom: 0;
@@ -142,6 +147,7 @@ main {
     font-size: 1rem;
     background: none;
   }
+
   .mini-nav {
     display: none;
   }
@@ -152,12 +158,14 @@ main {
   color: $gray;
   width: 100%;
   text-align: center;
+
   h2 {
     order: -1;
     color: $orange;
     margin-bottom: 1em;
     font-size: 1.1rem;
   }
+
   h1 {
     color: $orange;
     font-weight: 700;
@@ -196,18 +204,22 @@ main {
   color: #fff;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+
   & div h3 {
     margin-top: 0;
   }
+
   & hr {
     max-width: 2.5em;
     border: none;
     height: 1px;
     background-color: $orange;
   }
+
   & a {
     display: none;
   }
+
   & button {
     background-color: $orange;
     padding: 1em 1.5em;
@@ -238,6 +250,7 @@ main {
 
 .intructors-title {
   text-align: center;
+
   & hr {
     max-width: 2em;
     height: 1px;
@@ -250,9 +263,11 @@ main {
 .instructors {
   @include display(flex, column, start, center);
   padding: 0 0.3em;
+
   & div h3 {
     margin-bottom: 0;
   }
+
   & div hr {
     display: block;
     max-width: 2em;
@@ -260,6 +275,7 @@ main {
     height: 1px;
     border: none;
   }
+
   img {
     height: 8rem;
     width: 8rem;
@@ -268,6 +284,7 @@ main {
     background-repeat: no-repeat;
     background-size: 3em 3em;
   }
+
   hr {
     display: none;
   }
@@ -480,9 +497,11 @@ footer {
   padding: 1em;
   margin: 0 1em 2em;
   border: 1px solid $lightGray;
+
   & a {
     text-decoration: none;
     color: $gray;
+
     & span {
       color: $orange;
     }
@@ -493,6 +512,7 @@ footer {
   .ham {
     display: none;
   }
+
   .user-mod-container {
     .user-mod {
       @include display(flex, row, end, center);
@@ -501,6 +521,7 @@ footer {
       list-style: none;
       margin: 0 auto;
       padding: 0.2em 0;
+
       li {
         margin: 0 10px;
       }
@@ -510,6 +531,7 @@ footer {
         height: 1rem;
       }
     }
+
     .navbar-hide {
       @include display(flex, row, space-around, center);
       list-style: none;
@@ -523,28 +545,34 @@ footer {
       & li {
         margin-top: 0;
       }
+
       & li a {
         text-decoration: none;
         color: $gray;
         font-size: 1rem;
       }
+
       & :nth-child(2) a {
         color: $orange;
       }
+
       img {
         display: block;
         width: 8rem;
         height: 4rem;
       }
+
       & :first-child {
         margin-right: 25%;
       }
+
       .campaign {
         border: 3px solid $orange;
         padding: 1rem;
       }
     }
   }
+
   main {
     @include display(flex, column, start, start);
     color: $gray;
@@ -552,22 +580,27 @@ footer {
     background: url(../css/images/mainbg.png);
     background-repeat: no-repeat;
     background-size: cover;
+
     h2 {
-      margin-left: 6%;
+      margin-left: 0;
     }
+
     h1 {
-      margin-left: 6%;
+      margin-left: 0;
       max-width: 15em;
     }
+
     p {
       font-size: 0.9rem;
       max-width: 30em;
-      margin-left: 7%;
+      margin-left: 0;
       border: 2px solid #fff;
     }
+
     h3 {
-      margin-left: 6%;
+      margin-left: 0;
     }
+
     .place {
       font-size: 0.9rem;
       border: none;
@@ -715,14 +748,17 @@ footer {
       & p {
         margin: 0;
       }
+
       & h4 {
         margin: 1em auto;
       }
     }
+
     article:hover {
       border: 1px solid #fff;
     }
   }
+
   .instructors {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -733,9 +769,11 @@ footer {
       margin: 0 auto;
       padding: 2em 0;
     }
+
     & div h3 {
       margin-bottom: 0;
     }
+
     & div hr {
       display: block;
       max-width: 2em;
@@ -743,6 +781,7 @@ footer {
       height: 1px;
       border: none;
     }
+
     img {
       height: 13rem;
       width: 15rem;
@@ -751,6 +790,7 @@ footer {
       background-repeat: no-repeat;
       background-size: 5em 5em;
     }
+
     hr {
       display: none;
     }
@@ -790,6 +830,7 @@ footer {
 
   aside {
     display: block;
+
     & img,
     & h3 {
       opacity: 50%;
@@ -804,6 +845,7 @@ footer {
       width: 200px;
     }
   }
+
   .about-partners {
     display: none;
   }
