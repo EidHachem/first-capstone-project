@@ -56,10 +56,6 @@ body {
   list-style: none;
 }
 
-.user-mod-container .user-mod .logout {
-  padding-right: 5%;
-}
-
 .user-mod-container .navbar {
   display: flex;
   flex-direction: column;
@@ -210,11 +206,11 @@ main .mini-nav {
 }
 
 .program article {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
+  display: grid;
+  grid-template-columns: 15% 20% 65%;
+  text-align: left;
+  gap: 4px;
+  margin: 0.8rem;
   background-color: #272a31;
 }
 
@@ -230,6 +226,7 @@ main .mini-nav {
 
 .program p {
   padding: 0 0.3em;
+  font-size: 0.8rem;
 }
 
 .intructors-title {
@@ -347,6 +344,7 @@ footer {
   margin: 0 auto;
   width: 90%;
   position: relative;
+  gap: 50px;
 }
 
 .about-years .black-p {
@@ -400,7 +398,7 @@ footer {
   top: 125px;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 8px;
   z-index: -1;
   filter: saturate(20%);
 }
@@ -413,8 +411,8 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: 400px;
-  left: 0;
+  top: 420px;
+  left: 8px;
   z-index: -1;
   filter: saturate(20%);
 }
@@ -543,7 +541,7 @@ footer {
     color: #fff;
     list-style: none;
     margin: 0 auto;
-    padding: 0.2em 0;
+    padding: 0.2em 10em;
   }
 
   .user-mod-container .user-mod li {
@@ -559,7 +557,7 @@ footer {
     margin: 0 auto;
     background-color: #fff;
     height: auto;
-    padding: 0.5em 0;
+    padding: 0.5em 10em;
     font-size: 0.8rem;
     text-align: center;
   }
@@ -581,22 +579,19 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     color: #272a31;
     margin: 0 auto;
     background: url(../css/images/mainbg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: -20%;
-  }
-
-  main h2 {
-    margin-left: -15%;
+    padding: 3em 10em;
   }
 
   main h1 {
     margin-left: 0;
     max-width: 15em;
+    font-size: 3rem;
   }
 
   main p {
@@ -608,10 +603,12 @@ footer {
 
   main h3 {
     margin-left: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 
   main .place {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     border: none;
   }
 
@@ -655,18 +652,23 @@ footer {
   }
 
   .about-years-imgs {
-    display: flex;
+    padding: 0 25em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1%;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: space-between;
-    gap: 15em;
+    align-items: center; */
+    gap: 2.5em;
     position: relative;
   }
 
   .about-years-imgs span {
     font-size: 5rem;
     color: #fff;
-    align-self: center;
+    
   }
 
   .about-main a span {
@@ -695,7 +697,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 0;
+    top: -50px;
     right: 0;
     bottom: 0;
     left: 375px;
@@ -711,7 +713,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 0;
+    top: -50px;
     left: 800px;
     z-index: -1;
     filter: saturate(20%);
@@ -726,6 +728,10 @@ footer {
     color: #fff;
     padding-top: 2em;
     padding-bottom: 2em;
+  }
+
+  .program-container {
+    padding: 1.5em;
   }
 
   .program-container button {
@@ -760,11 +766,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 190px;
-    width: 150px;
+    min-height: 14em;
+    width: 12em;
     margin: 0;
     margin-right: 5px;
     padding: 0;
+    text-align: center;
   }
 
   .program article h4 {
