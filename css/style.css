@@ -656,11 +656,6 @@ footer {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 1%;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: space-between;
-    align-items: center; */
     gap: 2.5em;
     position: relative;
   }
@@ -668,7 +663,6 @@ footer {
   .about-years-imgs span {
     font-size: 5rem;
     color: #fff;
-    
   }
 
   .about-main a span {
