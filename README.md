@@ -12,6 +12,10 @@
 
 [this sample](https://eidhachem.github.io/first-capstone-project/)
 
+## Loom Video
+
+[Website review](https://www.loom.com/share/31c92fdcbcb848bf97f5447070cc4877?sharedAppSource=personal_library)
+
 ## Getting Started
 
 Add what you think should be edited in a comment
