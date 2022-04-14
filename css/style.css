@@ -755,6 +755,8 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 0;
+    min-height: 20em;
   }
 
   .program article {
@@ -762,12 +764,13 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 14em;
-    width: 12em;
+    min-height: 20em;
+    width: 17em;
     margin: 0;
     margin-right: 5px;
     padding: 0;
     text-align: center;
+    gap: 2em;
   }
 
   .program article h4 {
