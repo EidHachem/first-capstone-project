@@ -639,7 +639,7 @@ footer {
     top: 0px;
     right: 0px;
     bottom: 0px;
-    left: 100px;
+    left: 375px;
     z-index: -1;
     filter: saturate(20%);
   }
@@ -652,7 +652,7 @@ footer {
     background-size: cover;
     position: absolute;
     top: 0;
-    left: 550px;
+    left: 800px;
     z-index: -1;
     filter: saturate(20%);
   }

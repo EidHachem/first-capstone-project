@@ -15,7 +15,7 @@ ham.addEventListener('click', openCloseMenu);
 
 const speakers = [
   {
-    image: '../css/images/instructors/b1.jpg',
+    image: '../instructors/b1.jpg',
     imageAlt: 'Picture of Ben Parker',
     name: 'Ben Parker',
     position: 'Design Director at University of London',
@@ -23,7 +23,7 @@ const speakers = [
       'Started in this field 10 years a good, wrote a book about website design patterns',
   },
   {
-    image: '../css/images/instructors/g1.jpg',
+    image: '../instructors/g1.jpg',
     imageAlt: 'Picture of zoe Fernandez',
     name: 'Zoe Fernandez',
     position: 'Web Application Developer at Facebook',
@@ -31,7 +31,7 @@ const speakers = [
       'Full stack web developer since 2001, computer science instructor at university of London',
   },
   {
-    image: '../css/images/instructors/g2.jpg',
+    image: '../instructors/g2.jpg',
     imageAlt: 'Picture of Edward Cisneros',
     name: 'Edward Cisneros',
     position: 'SEO Specialist at Google',
@@ -40,7 +40,7 @@ const speakers = [
     show: 'no',
   },
   {
-    image: '../css/images/instructors/b2.jpg',
+    image: '../instructors/b2.jpg',
     imageAlt: 'Picture of May Gauthier',
     name: 'May Gauthier',
     position: 'Interaction Designer at Lenovo',
@@ -48,7 +48,7 @@ const speakers = [
     show: 'no',
   },
   {
-    image: '../css/images/instructors/b3.jpg',
+    image: '../instructors/b3.jpg',
     imageAlt: 'Picture of Vince Veras',
     name: 'Vince Veras',
     position: 'Visual Designer at Microverse',
@@ -57,7 +57,7 @@ const speakers = [
     show: 'no',
   },
   {
-    image: '../css/images/instructors/g3.jpg',
+    image: '../instructors/g3.jpg',
     imageAlt: 'Picture of Chris Powel',
     name: 'Chris Powel',
     position: 'JavaScript Engineer at Apple',
