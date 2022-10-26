@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[this sample](https://eidhachem.github.io/first-capstone-project/)
+[The legends bootcamp](https://thelegendsbootcamp.netlify.app/)
 
 ## Loom Video
 
